@@ -1,0 +1,131 @@
+body{
+display:flex;
+flex-flow:row wrap;
+height:100vh;
+  }
+ /* .container{
+    height:100vh;
+    display:flex;
+    flex-flow:row wrap;
+    
+    }*/
+
+.content{
+  position:relative;
+  width:100px;
+  height:100px;
+  background:linear-gradient(to bottom left,rgba(253,225,17,1),rgb(255,255,255) 130%);
+  padding:7px;
+  box-sizing:border-box;
+  font-family:cursive;
+  font-size:0.6rem;
+  border-radius:0 0 0 10% / 0 0 0 50%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  align-content:space-even;
+  justify-content:center;
+  margin:10px;
+  word-break:break-all;
+  white-space:wrap;
+  }
+  p{
+    align-self:flex-end;
+    float:right;
+    color:green;
+    width:11%;
+    }
+  .content::before{
+    width:100%;
+    height:100%;
+    content:"";
+    position:absolute;
+    overflow:hidden;
+    white-space:nowrap;
+   
+    top:3px;
+    background:linear-gradient(to right,rgba(100,100,100,0.8) 0%,rgba(100,100,100,0.8) 90%,transparent 90%);
+    filter:blur(2px);
+  border-radius:0 50% 70% 5% / 0 5% 30% 10%;
+    z-index:-1;
+    }
+   
+    .sticky-note{
+      
+      margin-left:10%;
+      transform:rotate(-10deg);
+      
+      }
+      .writer{
+        align-self:flex-start;
+        box-sizing:border-box;
+        position:sticky;
+        width:300px;
+        height:370px;
+        background:rgba(253,225,17,0.8);
+        top:0;
+        bottom:300px;
+        right:0;
+        align-self:flex-start;
+        margin:50px auto;
+       display:none;
+       justify-content:center;
+        align-items:flex-start;
+        flex-wrap:wrap;
+        padding-bottom:15px;
+        }
+        textarea{
+          width:90%;
+          height:80%;
+          line-height:20px;
+          background:repeating-linear-gradient(transparent 0,transparent 18px,brown 18px,brown 20px);
+          border:none;
+         
+         
+                  }
+        
+        textarea:focus,button:focus{
+          outline:none;
+          }
+         .save{
+            background:hsl(200,100%,50%);
+            border-radius:2rem;
+            color:white;
+            border:none;
+           align-self:flex-end;
+           margin-bottom:0.4rem;
+           transform:scale(1.2,1.2);
+           margin:10px;
+           
+            }
+            
+            
+             .add{
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                position:sticky;
+                align-self:flex-end;
+               bottom:2vh;
+             
+                left:90%;
+                 background:rgba(253,225,17,1);
+                color:white;
+                font-size:2rem;
+                }
+            @media only screen and (min-width:600px){
+              .content{
+              margin:5% 10%;
+              width:300px;
+              height:300px;
+              font-size:1.6rem;
+              }
+              .content::before{
+                filter:blur(5px);
+                }
+                .add{
+                  width:100px;
+                  height:100px;
+                  font-size:4rem;
+                  }
+              }
