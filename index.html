@@ -1,20 +1,25 @@
 <!doctype html>
 <html>
- <head> 
-  <link rel="stylesheet" href="style.css"> 
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"> 
- </head> 
- <body> 
-  <div class="sticky-note"> 
-   <div class="content"> 
-   </div> 
-  </div> 
-  <div class="writer"> 
-   <p id="limit">100</p> 
-   <textarea id="val" maxlength="100"></textarea> 
-   <button class="save" onclick="save()">save</button> 
-  </div> 
-  <button class="add">+</button> 
- <script src="main.js"></script>
- </body>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+</head>
+
+<body>
+  <!-- <div class="sticky-note">
+    <!-- <div class="content">
+    </div> -->
+  <!-- </div>  -->
+  <div class="writer" draggable="true">
+    <p id="limit">100</p>
+    <textarea id="val" maxlength="100"></textarea>
+    <button class="save" onclick="save()">save</button>
+  </div>
+  <button class="add">+</button>
+  <script src="main.js"></script>
+</body>
+<div class="box"></div>
 </html>
+
+
