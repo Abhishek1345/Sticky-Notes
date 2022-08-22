@@ -1,7 +1,14 @@
 body {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow:row wrap;
   height: 100vh;
+}
+.container{
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+  align-content:flex-start;
+  /* align-items: flex-start; */
 }
 
 /* .container{
@@ -53,7 +60,9 @@ p {
 }
 
 .sticky-note {
-  margin-left: 10%;
+  margin-left:5%;
+  margin-bottom:5%;
+  height: max(100px, 10vw);
   transform: rotate(-10deg);
 }
 
@@ -108,6 +117,7 @@ textarea:focus, button:focus {
   position: sticky;
   align-self: flex-end;
   bottom: 2vh;
+  /* top:100%; */
   left: 90%;
   background: rgba(253, 225, 17, 1);
   color: white;

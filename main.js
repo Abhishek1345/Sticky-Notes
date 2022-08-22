@@ -62,7 +62,8 @@ val="";
 function StickyNote(obj, content) {
   this.obj = obj;
   this.obj.appendChild(content);
-  document.body.insertBefore(this.obj, document.getElementsByClassName("writer")[0]);
+  var container=document.querySelector(".container");
+  container.insertBefore(this.obj, document.getElementsByClassName("writer")[0]);
   this.obj.addEventListener("dblclick", () => {
     target = obj;
     getWriter();
