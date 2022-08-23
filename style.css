@@ -123,23 +123,19 @@ textarea:focus, button:focus {
   color: white;
   font-size: 2rem;
 }
-
- /* @media only screen and (min-width:600px){
-              .content{
-              margin:5% 10%;
-              width:300px;
-              height:300px;
-              font-size:1.6rem;
-              }
-              .content::before{
-                filter:blur(5px);
-                }
-                .add{
-                  width:100px;
-                  height:100px;
-                  font-size:4rem;
-                  }
-              } */
+.add:hover{
+  animation:rotate 2s forwards;
+}
+ @keyframes rotate{
+  from{
+    transform:rotate(0);
+    box-shadow:none;
+  }
+  to{
+    transform:rotate(60deg);
+    box-shadow:3px 3px 20px rgb(39, 39, 39);;
+  }
+ }
 @media only screen and (max-width:1000px){
   html{
     font-size: 14px;
